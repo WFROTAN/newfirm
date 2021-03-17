@@ -24,7 +24,6 @@ const Features = () => {
     <StyledSection id="features">
       <ImageWrapper>
         <StyledImage fluid={data.file.childImageSharp.fluid} />
-        <br />
       </ImageWrapper>
       <StyledContainer>
         <SectionTitle>
@@ -126,21 +125,24 @@ export default Features
 
 const StyledSection = styled(Section)`
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
 `
 
-const StyledContainer = styled(Container)``
+const StyledContainer = styled(Container)`
+  flex: 4;
+`
 
 const ImageWrapper = styled.div`
-  align-self: center;
-  margin-left: 30px;
-  @media (max-width: ${(props) => props.theme.screen.md}) {
-    justify-self: center;
-  }
+  display: flex;
+  justify-content: space-around;
+  margin-left: 120px;
+  flex: 1;
 `
 
 const StyledImage = styled(Img)`
-  width: 600px;
+  width: 500px;
+  height: auto;
   @media (max-width: ${(props) => props.theme.screen.md}) {
     width: 400px;
   }

@@ -30,6 +30,7 @@ module.exports = {
         path: `${__dirname}/src/images/product`,
       },
     },
+    `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -47,5 +48,13 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /product/, // See below to configure properly
+        },
+      },
+    },
   ],
 }

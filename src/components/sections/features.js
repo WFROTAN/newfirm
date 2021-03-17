@@ -127,6 +127,10 @@ const StyledSection = styled(Section)`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media only screen and (max-width: 1300px) {
+    flex-direction: column;
+  }
 `
 
 const StyledContainer = styled(Container)`
@@ -138,6 +142,10 @@ const ImageWrapper = styled.div`
   justify-content: space-around;
   margin-left: 120px;
   flex: 1;
+
+  @media only screen and (max-width: 1300px) {
+    margin-left: 0px;
+  }
 `
 
 const StyledImage = styled(Img)`
@@ -160,7 +168,7 @@ const SectionTitle = styled.h3`
   text-align: center;
 
   span {
-    color: #cca86e;
+    color: #ff4432;
     maring: 0;
     padding: 0;
   }

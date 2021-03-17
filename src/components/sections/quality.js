@@ -3,53 +3,53 @@ import styled from "styled-components"
 
 import { Section, Container } from "../global"
 
-import MobileIcon from "../../images/product/phone-portrait-outline.svg"
-import DesktopIcon from "../../images/product/desktop-outline.svg"
-import OptionsIcon from "../../images/product/options-outline.svg"
+import TextIcon from "../../images/product/text-outline.svg"
+import PeopleIcon from "../../images/product/people-outline.svg"
+import RocketIcon from "../../images/product/rocket-outline.svg"
 
-const WhatWeDo = () => (
-  <StyledSection id="what-we-do">
+const Quality = () => (
+  <StyledSection id="quality">
     <StyledContainer>
       <SectionTitle>
-        <span>WHAT</span>&nbsp;WE DO
+        <span>QUALITY</span>&nbsp;OVER QUANTITY
       </SectionTitle>
       <SectionText>
         <p>
-          We specialize in small business web design and development for clients
-          anywhere in Canada. Every line of code is written by hand to ensure
-          the best performance, which helps bring in more customers to your site
-          and bring more revenue to your business.
+          We focus on the needs on each individual business and tailor content
+          around what makes it unique. Our collaborative process is very hands
+          on as we work closely with you to create a website you're 100% happy
+          with and not something you just settle for.
         </p>
       </SectionText>
       <WhatGrid>
         <WhatItem>
           <WhatImage>
-            <MobileIcon />
+            <TextIcon />
           </WhatImage>
-          <WhatTitle>Mobile-First Design</WhatTitle>
+          <WhatTitle>No Pre-Written Content</WhatTitle>
           <WhatText>
-            We start building your site for mobile devices first, then we add on
-            to it to make tablet and desktop.
+            We write unique and engaging content around your company. Everyone
+            is unique!
           </WhatText>
         </WhatItem>
         <WhatItem>
           <WhatImage>
-            <DesktopIcon />
+            <PeopleIcon />
           </WhatImage>
-          <WhatTitle>Fully Responsive</WhatTitle>
+          <WhatTitle>Unbeatable Customer Service</WhatTitle>
           <WhatText>
-            Your website will fit all mobile screens sizes, tablets, and desktop
-            sizes so new clients can access your site from anywhere.
+            No automated systems - When you need help the lead developer answers
+            your call.
           </WhatText>
         </WhatItem>
         <WhatItem>
           <WhatImage>
-            <OptionsIcon />
+            <RocketIcon />
           </WhatImage>
-          <WhatTitle>Optimization</WhatTitle>
+          <WhatTitle>No Limits On Design</WhatTitle>
           <WhatText>
-            60% of all internet traffic is on mobile devices, so we optimize
-            your mobile to perform their best in search engines.
+            We can edit the design to cater to your tastes. Everything is
+            customizable!
           </WhatText>
         </WhatItem>
       </WhatGrid>
@@ -57,11 +57,11 @@ const WhatWeDo = () => (
   </StyledSection>
 )
 
-export default WhatWeDo
+export default Quality
 
 const StyledSection = styled(Section)`
-  padding-top: 50px;
-  padding-bottom: 80px;
+  padding-top: 120px;
+  padding-bottom: 100px;
 `
 
 const StyledContainer = styled(Container)``

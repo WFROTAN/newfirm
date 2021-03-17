@@ -14,7 +14,10 @@ const Pricing = () => (
             <h4>Standard + Blogging</h4>
           </PricingTitle>
           <PricingText>
-            <h2>$300</h2>
+            <h3>Starting at</h3>
+            <h2>
+              $300<span>/mo</span>
+            </h2>
             <PricingList>
               <ul>
                 <li>
@@ -42,7 +45,10 @@ const Pricing = () => (
             <h4>Standard</h4>
           </PricingTitle>
           <PricingText>
-            <h2>$150</h2>
+            <h3>5 Pages</h3>
+            <h2>
+              $150<span>/mo</span>
+            </h2>
             <PricingList>
               <ul>
                 <li>
@@ -71,6 +77,7 @@ const Pricing = () => (
             <h4>Logos & Graphic Design</h4>
           </PricingTitle>
           <PricingText>
+            <h3>Included!</h3>
             <h2>$0</h2>
             <PricingList>
               <ul>
@@ -113,30 +120,27 @@ const PricingGrid = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-
-  @media (max-width: ${(props) => props.theme.screen.sm}) {
-    grid-template-columns: 1fr;
-    padding: 0 64px;
-  }
 
   #popular-option {
-    width: 300px;
-    height: 500px;
     h4 {
       background: #a7ffa4;
     }
+  }
+
+  @media only screen and (max-width: 991px) {
+    flex-direction: column;
+    align-items: center;
   }
 `
 
 const PricingItem = styled.div`
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
   flex: 1;
   width: 300px;
-  height: 500px;
+  height: 600px;
   margin: 0;
   border: 2px solid #e6f2ff;
   border-radius: 6px;
@@ -144,6 +148,19 @@ const PricingItem = styled.div`
 
   &:not(:last-child) {
     margin-right: 15px;
+  }
+
+  @media only screen and (max-width: 991px) {
+    margin-bottom: 50px;
+    width: 500px;
+
+    &:not(:last-child) {
+      margin-right: 0px;
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+    width: 350px;
   }
 `
 
@@ -172,6 +189,7 @@ const PricingList = styled.div`
     text-align: left;
     margin: 0;
     padding: 0;
+    height: 178px;
 
     li {
       display: flex;
@@ -197,13 +215,35 @@ const PricingText = styled.p`
 
   h2 {
     margin-bottom: 40px;
-    margin-top: 30px;
+    margin-top: 0px;
     font-size: 60px;
-    color: #43b7ff;
+    color: #ff4432;
+  }
+
+  h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-family: "HK Grotesk Normal";
+    margin-top: 30px;
+  }
+
+  span {
+    font-size: 25px;
+    text-transform: uppercase;
+  }
+
+  @media only screen and (max-width: 767px) {
+    h2 {
+      margin-top: 15px;
+    }
   }
 `
 const PricingButton = styled.button`
   margin-top: 40px;
+  margin-bottom: 40px;
   font-weight: 500;
   font-size: 14px;
   color: white;
@@ -213,7 +253,7 @@ const PricingButton = styled.button`
   text-transform: uppercase;
   cursor: pointer;
   white-space: nowrap;
-  background: linear-gradient(90deg, #43b7ff 0, #00ddf6 100%);
+  background: linear-gradient(90deg, #ff4432 0, white 200%);
   border-radius: 4px;
   padding: 0px 40px;
   border-width: 0px;

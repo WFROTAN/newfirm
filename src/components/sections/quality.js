@@ -76,6 +76,11 @@ const SectionTitle = styled.h3`
   span {
     color: #ff4432;
   }
+
+  @media screen and (max-width: 435px) {
+    display: flex;
+    flex-direction: column;
+  }
 `
 
 const SectionText = styled.div`

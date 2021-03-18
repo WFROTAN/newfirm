@@ -10,7 +10,7 @@ const Header = () => {
     query {
       file(sourceInstanceName: { eq: "product" }, name: { eq: "mockup-main" }) {
         childImageSharp {
-          fluid(maxWidth: 1000) {
+          fluid(maxWidth: 400) {
             ...GatsbyImageSharpFluid_tracedSVG
           }
         }
@@ -27,11 +27,10 @@ const Header = () => {
       <Container>
         <Flex>
           <HeaderTextGroup>
-            <Subtitle>Personal Finance</Subtitle>
             <h1>
-              Small Business Web
+              Small Business Web&nbsp;
               <br />
-              Design +
+              Design +&nbsp;
               <br />
               Development
             </h1>
@@ -95,6 +94,25 @@ const HeaderTextGroup = styled.div`
 
   p {
     margin-bottom: 48px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    h1 {
+      font-size: 1.8em;
+      width: 100%;
+    }
+
+    h2 {
+      font-size: 1em;
+    }
+
+    p {
+      font-size: 10px;
+    }
+
+    form {
+      padding: 0;
+    }
   }
 `
 
@@ -188,6 +206,5 @@ const StyledImage = styled(Img)`
   }
   @media (max-width: ${(props) => props.theme.screen.sm}) {
     width: 300px;
-    display: none;
   }
 `

@@ -121,6 +121,10 @@ const WhatTitle = styled.h4`
   line-height: 30px;
   margin-bottom: 10px;
   margin-top: 25px;
+
+  @media only screen and (max-width: 1198px) {
+    text-align: center;
+  }
 `
 
 const WhatText = styled.p`

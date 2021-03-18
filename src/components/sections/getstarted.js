@@ -135,8 +135,8 @@ const FormContainer = styled.div`
         width: 604px;
       }
 
-      @media screen and (max-width: 639px) {
-        width: 95%;
+      @media screen and (max-width: 660px) {
+        width: 90vw;
       }
     }
 
@@ -167,15 +167,13 @@ const FormContainer = styled.div`
           width: 604px;
         }
 
-        @media screen and (max-width: 639px) {
-          width: 95%;
-        }
-
-        @media screen and (max-width: 564px) {
+        @media screen and (max-width: 660px) {
           flex-direction: column;
+          align-items: center;
 
           label {
-            width: 100%;
+            width: 90vw;
+            margin-bottom: 30px;
           }
         }
       }

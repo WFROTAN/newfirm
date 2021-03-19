@@ -1,7 +1,8 @@
 import React from "react"
 import styled from "styled-components"
-import { graphql, useStaticQuery, Link } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
+import AnchorLink from "react-anchor-link-smooth-scroll"
 
 import { Container } from "../global"
 
@@ -38,8 +39,10 @@ const Header = () => {
               No page builders or WordPress - We offer 100% hand-coded websites
               with superior results starting at $150/mo.
             </h2>
-            <HeaderForm onSubmit={handleSubmit}>
-              <HeaderButton>Get In Touch!</HeaderButton>
+            <HeaderForm>
+              <AnchorLink href="#contact">
+                <HeaderButton>Get In Touch!</HeaderButton>
+              </AnchorLink>
             </HeaderForm>
           </HeaderTextGroup>
           <ImageWrapper>
@@ -94,6 +97,10 @@ const HeaderTextGroup = styled.div`
 
   p {
     margin-bottom: 48px;
+  }
+
+  a {
+    text-decoration: none;
   }
 
   @media only screen and (max-width: 767px) {

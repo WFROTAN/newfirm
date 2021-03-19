@@ -36,7 +36,9 @@ const Footer = () => (
       </FooterColumn>
     </FooterColumnContainer>
     <BrandContainer>
-      <Logo>AFTER RED</Logo>
+      <Logo>
+        <span>AFTER</span>&nbsp;RED
+      </Logo>
     </BrandContainer>
   </FooterWrapper>
 )
@@ -61,6 +63,10 @@ const Logo = styled.div`
   z-index: 9;
   text-decoration: none;
   outline: 0px;
+
+  span {
+    color: #ff4432;
+  }
 `
 
 const BrandContainer = styled(Container)`

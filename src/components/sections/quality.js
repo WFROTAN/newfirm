@@ -8,7 +8,7 @@ import PeopleIcon from "../../images/product/people-outline.svg"
 import RocketIcon from "../../images/product/rocket-outline.svg"
 
 const Quality = () => (
-  <StyledSection id="quality">
+  <StyledSection id="about">
     <StyledContainer>
       <SectionTitle>
         <span>QUALITY</span>&nbsp;OVER QUANTITY

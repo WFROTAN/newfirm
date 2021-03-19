@@ -4,7 +4,7 @@ import styled from "styled-components"
 import { Container, Section } from "../global"
 
 const GetStarted = () => (
-  <StyledSection>
+  <StyledSection id="contact">
     <GetStartedContainer>
       <GetStartedTitle>
         <span>Drop</span>&nbsp;us a line

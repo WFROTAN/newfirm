@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import AnchorLink from "react-anchor-link-smooth-scroll"
 
 import { Section, Container } from "../global"
 
@@ -38,7 +39,9 @@ const Pricing = () => (
               </ul>
             </PricingList>
           </PricingText>
-          <PricingButton>Contact Us</PricingButton>
+          <AnchorLink href="#contact">
+            <PricingButton>Contact Us</PricingButton>
+          </AnchorLink>
         </PricingItem>
         <PricingItem id="popular-option">
           <PricingTitle>
@@ -70,7 +73,9 @@ const Pricing = () => (
               </ul>
             </PricingList>
           </PricingText>
-          <PricingButton>Contact Us</PricingButton>
+          <AnchorLink href="#contact">
+            <PricingButton>Contact Us</PricingButton>
+          </AnchorLink>
         </PricingItem>
         <PricingItem>
           <PricingTitle>
@@ -99,7 +104,9 @@ const Pricing = () => (
               </ul>
             </PricingList>
           </PricingText>
-          <PricingButton>Contact Us</PricingButton>
+          <AnchorLink href="#contact">
+            <PricingButton>Contact Us</PricingButton>
+          </AnchorLink>
         </PricingItem>
       </PricingGrid>
     </StyledContainer>
@@ -161,6 +168,10 @@ const PricingItem = styled.div`
 
   @media only screen and (max-width: 450px) {
     width: 350px;
+  }
+
+  a {
+    text-decoration: none;
   }
 `
 

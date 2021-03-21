@@ -11,12 +11,8 @@ const GetStarted = () => (
       </GetStartedTitle>
       <FormContainer>
         <div className="form-details">
-          <form
-            method="post"
-            netlify-honeypot="bot-field"
-            data-netlify="true"
-            name="contact"
-          >
+          <form method="post" data-netlify="true" name="contact">
+            <input type="hidden" name="contact-us" value="contact" />
             <div className="form-row">
               <label>
                 First Name

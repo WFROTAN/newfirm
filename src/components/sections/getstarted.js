@@ -17,8 +17,6 @@ const GetStarted = () => (
             data-netlify="true"
             name="contact"
           >
-            <input type="hidden" name="bot-field" />
-            <input type="hidden" name="contact-us" value="contact" />
             <div className="form-row">
               <label>
                 First Name

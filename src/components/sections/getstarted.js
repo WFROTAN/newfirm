@@ -35,7 +35,7 @@ const GetStarted = () => (
             </div>
             <div className="userText">
               <h4>How can we help you with your website?</h4>
-              <textarea rows="10"></textarea>
+              <textarea name="comment" rows="10"></textarea>
             </div>
             <TryItButton type="submit">Submit</TryItButton>
           </form>

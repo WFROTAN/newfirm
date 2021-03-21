@@ -25,10 +25,9 @@ const Footer = () => (
         </ul>
       </FooterColumn>
       <FooterColumn>
-        <span>Social</span>
+        <span>Phone</span>
         <ul>
-          <li>LinkedIn</li>
-          <li>Instagram</li>
+          <li>(416) 732-1272</li>
         </ul>
       </FooterColumn>
     </FooterColumnContainer>

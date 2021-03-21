@@ -90,7 +90,7 @@ export const Brand = styled.div`
 export const ActionsContainer = styled.div`
   display: flex;
   align-items: center;
-  @media (max-width: ${(props) => props.theme.screen.xs}) {
+  @media (max-width: 766px) {
     display: none;
   }
 

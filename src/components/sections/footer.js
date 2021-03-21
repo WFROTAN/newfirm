@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import AnchorLink from "react-anchor-link-smooth-scroll"
 
 import { Container } from "../global"
 
@@ -7,24 +8,20 @@ const Footer = () => (
   <FooterWrapper id="footer">
     <FooterColumnContainer>
       <FooterColumn>
-        <span>Features</span>
-        <ul>
-          <li>Automation</li>
-          <li>Rewards</li>
-        </ul>
-      </FooterColumn>
-      <FooterColumn>
-        <span>Resources</span>
-        <ul>
-          <li>Compare</li>
-          <li>Blog</li>
-        </ul>
-      </FooterColumn>
-      <FooterColumn>
         <span>Company</span>
         <ul>
-          <li>About Us</li>
-          <li>Careers</li>
+          <li>
+            <AnchorLink href="#features">Features</AnchorLink>
+          </li>
+          <li>
+            <AnchorLink href="#about">About Us</AnchorLink>
+          </li>
+          <li>
+            <AnchorLink href="#pricing">Pricing</AnchorLink>
+          </li>
+          <li>
+            <AnchorLink href="#contact">Contact</AnchorLink>
+          </li>
         </ul>
       </FooterColumn>
       <FooterColumn>
@@ -103,6 +100,12 @@ const FooterColumn = styled.div`
       margin-bottom: 12px;
       font-family: ${(props) => props.theme.font.normal};
       font-size: 15px;
+
+      a:link,
+      a:visited {
+        text-decoration: none;
+        color: black;
+      }
     }
   }
 `

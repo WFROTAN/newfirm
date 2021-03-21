@@ -40,7 +40,7 @@ const Features = () => {
             of work, number of additional pages, and time involved.
             <br />
             <br />
-            You own yourdomain, content, listing, and profiles. Cancel anytime
+            You own your domain, content, listing, and profiles. Cancel anytime
             with no fees or hassle.
           </p>
         </SectionText>

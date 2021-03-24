@@ -27,7 +27,7 @@ const Footer = () => (
       <FooterColumn>
         <span>Phone</span>
         <ul>
-          <li>(416) 732-1272</li>
+          <li>(647) 271-2701</li>
         </ul>
       </FooterColumn>
     </FooterColumnContainer>

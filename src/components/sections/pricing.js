@@ -12,51 +12,18 @@ const Pricing = () => (
       <PricingGrid>
         <PricingItem>
           <PricingTitle>
-            <h4>Standard + Blogging</h4>
+            <h4>Basic</h4>
           </PricingTitle>
           <PricingText>
             <h3>Starting at</h3>
             <h2>
-              $300<span>/mo</span>
+              $50<span>/mo</span>
             </h2>
             <PricingList>
               <ul>
                 <li>
                   <CheckIcon />
-                  1000+ Word Post
-                </li>
-                <li>
-                  <CheckIcon />
-                  Written By an SEO Specialist
-                </li>
-                <li>
-                  <CheckIcon />1 Post Per Month
-                </li>
-                <li>
-                  <CheckIcon />
-                  $150 Per Extra Post
-                </li>
-              </ul>
-            </PricingList>
-          </PricingText>
-          <AnchorLink href="#contact">
-            <PricingButton>Contact Us</PricingButton>
-          </AnchorLink>
-        </PricingItem>
-        <PricingItem id="popular-option">
-          <PricingTitle>
-            <h4>Standard</h4>
-          </PricingTitle>
-          <PricingText>
-            <h3>5 Pages</h3>
-            <h2>
-              $150<span>/mo</span>
-            </h2>
-            <PricingList>
-              <ul>
-                <li>
-                  <CheckIcon />
-                  Unlimited Edits
+                  Wordpress CMS
                 </li>
                 <li>
                   <CheckIcon />
@@ -68,7 +35,49 @@ const Pricing = () => (
                 </li>
                 <li>
                   <CheckIcon />
-                  Lifetime Updates
+                  Unlimited Updates
+                </li>
+              </ul>
+            </PricingList>
+          </PricingText>
+          <AnchorLink href="#contact">
+            <PricingButton>Contact Us</PricingButton>
+          </AnchorLink>
+        </PricingItem>
+        <PricingItem id="popular-option">
+          <PricingTitle>
+            <h4>Advanced</h4>
+          </PricingTitle>
+          <PricingText>
+            <h3>5 Pages</h3>
+            <h2>
+              $150<span>/mo</span>
+            </h2>
+            <PricingList>
+              <ul>
+                <li>
+                  <CheckIcon />
+                  No Wordpress
+                </li>
+                <li>
+                  <CheckIcon />
+                  Handwritten from Scratch
+                </li>
+                <li>
+                  <CheckIcon />
+                  High SEO & Performance
+                </li>
+                <li>
+                  <CheckIcon />
+                  Includes Hosting
+                </li>
+                <li>
+                  <CheckIcon />
+                  24/7 Customer Service
+                </li>
+                <li>
+                  <CheckIcon />
+                  Unlimited Updates
                 </li>
               </ul>
             </PricingList>
@@ -129,8 +138,14 @@ const PricingGrid = styled.div`
   justify-content: space-between;
 
   #popular-option {
+    height: 100%;
+
     h4 {
       background: #a7ffa4;
+    }
+
+    ul {
+      height: 100%;
     }
   }
 

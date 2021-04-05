@@ -36,8 +36,8 @@ const Header = () => {
               Development
             </h1>
             <h2>
-              No page builders or WordPress - We offer 100% hand-coded websites
-              with superior results starting at $150/mo.
+              We offer Wordpress and 100% hand-coded websites with superior
+              results starting at $50/mo.
             </h2>
             <HeaderForm>
               <AnchorLink href="#contact">

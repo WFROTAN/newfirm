@@ -17,8 +17,8 @@ const Quality = () => (
         <p>
           We focus on the needs on each individual business and tailor content
           around what makes it unique. Our collaborative process is very hands
-          on as we work closely with you to create a website you're 100% happy
-          with and not something you just settle for.
+          on as we work closely with you to create a website that you're 100%
+          happy with, and not something you simply settle for.
         </p>
       </SectionText>
       <WhatGrid>
@@ -28,8 +28,8 @@ const Quality = () => (
           </WhatImage>
           <WhatTitle>No Pre-Written Content</WhatTitle>
           <WhatText>
-            We write unique and engaging content around your company. Everyone
-            is unique!
+            We write unique and engaging content focused around your company's
+            services. Everyone is unique!
           </WhatText>
         </WhatItem>
         <WhatItem>
@@ -39,7 +39,7 @@ const Quality = () => (
           <WhatTitle>Unbeatable Customer Service</WhatTitle>
           <WhatText>
             No automated systems - When you need help the lead developer answers
-            your call.
+            your call or email.
           </WhatText>
         </WhatItem>
         <WhatItem>
@@ -48,8 +48,8 @@ const Quality = () => (
           </WhatImage>
           <WhatTitle>No Limits On Design</WhatTitle>
           <WhatText>
-            We can edit the design to cater to your tastes. Everything is
-            customizable!
+            We can edit the website design to cater to your tastes. Everything
+            is customizable!
           </WhatText>
         </WhatItem>
       </WhatGrid>

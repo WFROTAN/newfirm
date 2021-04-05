@@ -36,7 +36,7 @@ const Features = () => {
         <SectionText>
           <p>
             $0 down for a standard 5 page small business website. If you need
-            more than that then we have to do custom pricing based on the scope
+            more than that then we can provide custom pricing based on the scope
             of work, number of additional pages, and time involved.
             <br />
             <br />
@@ -52,7 +52,8 @@ const Features = () => {
             <FeatureMain>
               <FeatureTitle>Hosting Fees Included</FeatureTitle>
               <FeatureText>
-                Hosting fees are built right into the monthly payment.
+                Hosting fees are built right into the monthly payment. No
+                extraneous or surprise fees!
               </FeatureText>
             </FeatureMain>
           </FeatureItem>
@@ -63,8 +64,8 @@ const Features = () => {
             <FeatureMain>
               <FeatureTitle>Unlimited Edits</FeatureTitle>
               <FeatureText>
-                Change anything you want at anytime and it will be done that
-                day.
+                Request changes at anytime and your modifications will be
+                completed ASAP.
               </FeatureText>
             </FeatureMain>
           </FeatureItem>
@@ -75,8 +76,8 @@ const Features = () => {
             <FeatureMain>
               <FeatureTitle>24/7 Customer Service</FeatureTitle>
               <FeatureText>
-                Call direct anytime day or night, no phone trees or automated
-                responses.
+                Contact us direct at anytime day or night, no phone trees or
+                automated responses.
               </FeatureText>
             </FeatureMain>
           </FeatureItem>
@@ -87,7 +88,7 @@ const Features = () => {
             <FeatureMain>
               <FeatureTitle>Web Design & Development</FeatureTitle>
               <FeatureText>
-                Includes over 40 hours of design, development, and testing.
+                Including over 40 hours of design, development, and testing.
               </FeatureText>
             </FeatureMain>
           </FeatureItem>
@@ -98,8 +99,8 @@ const Features = () => {
             <FeatureMain>
               <FeatureTitle>Citations and Listings</FeatureTitle>
               <FeatureText>
-                Its important to have your website linked from other websites,
-                like directories.
+                It's important to have your website linked to from other
+                websites, like directories.
               </FeatureText>
             </FeatureMain>
           </FeatureItem>
@@ -110,8 +111,8 @@ const Features = () => {
             <FeatureMain>
               <FeatureTitle>Google Analytics</FeatureTitle>
               <FeatureText>
-                We install Analytics for free to monitor traffic and where it
-                comes from.
+                We install Analytics for free to monitor your traffic and its
+                sources.
               </FeatureText>
             </FeatureMain>
           </FeatureItem>

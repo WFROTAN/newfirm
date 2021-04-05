@@ -15,10 +15,10 @@ const WhatWeDo = () => (
       </SectionTitle>
       <SectionText>
         <p>
-          We specialize in small business web design and development for clients
-          anywhere in Canada. Every line of code is written by hand to ensure
-          the best performance, which helps bring in more customers to your site
-          and bring more revenue to your business.
+          We specialize in small business web design and development. Every line
+          of code is written by hand to ensure the best performance, which in
+          turn helps attract more customers to your site and generate more
+          revenue for your business.
         </p>
       </SectionText>
       <WhatGrid>
@@ -29,7 +29,7 @@ const WhatWeDo = () => (
           <WhatTitle>Mobile-First Design</WhatTitle>
           <WhatText>
             We start building your site for mobile devices first, then we add on
-            to it to make tablet and desktop.
+            to it to make it tablet and desktop friendly and functional.
           </WhatText>
         </WhatItem>
         <WhatItem>
@@ -38,8 +38,8 @@ const WhatWeDo = () => (
           </WhatImage>
           <WhatTitle>Fully Responsive</WhatTitle>
           <WhatText>
-            Your website will fit all mobile screens sizes, tablets, and desktop
-            sizes so new clients can access your site from anywhere.
+            Your website will fit all mobile, tablet, and desktop screen sizes
+            so new clients can access your site from anywhere.
           </WhatText>
         </WhatItem>
         <WhatItem>
@@ -48,8 +48,9 @@ const WhatWeDo = () => (
           </WhatImage>
           <WhatTitle>Optimization</WhatTitle>
           <WhatText>
-            60% of all internet traffic is on mobile devices, so we optimize
-            your mobile to perform their best in search engines.
+            60% of all internet traffic is through mobile devices, so we
+            optimize mobile functionality to achieve top notch performance in
+            search engine results.
           </WhatText>
         </WhatItem>
       </WhatGrid>

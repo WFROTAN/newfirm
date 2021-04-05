@@ -28,7 +28,7 @@ const Features = () => {
       <StyledContainer>
         <SectionTitle>
           <h3>
-            <span>$0</span>&nbsp;Down,&nbsp;<span>$150</span>&nbsp;Per Month,
+            <span>$0</span>&nbsp;Down,&nbsp;<span>$50</span>&nbsp;Per Month,
             <br />
             No Minimum Contract{" "}
           </h3>

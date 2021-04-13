@@ -4,6 +4,8 @@ import AnchorLink from "react-anchor-link-smooth-scroll"
 
 import { Container } from "../global"
 
+import LogoRocket from "../../images/product/logo-rocket.svg"
+
 const Footer = () => (
   <FooterWrapper id="footer">
     <FooterColumnContainer>
@@ -33,7 +35,8 @@ const Footer = () => (
     </FooterColumnContainer>
     <BrandContainer>
       <Logo>
-        <span>AFTER</span>&nbsp;RED
+        <LogoRocket />
+        &nbsp;<span>AFTER</span>&nbsp;RED
       </Logo>
     </BrandContainer>
   </FooterWrapper>
@@ -62,6 +65,11 @@ const Logo = styled.div`
 
   span {
     color: #ff4432;
+  }
+
+  svg {
+    width: 100px;
+    height: 100%;
   }
 `
 

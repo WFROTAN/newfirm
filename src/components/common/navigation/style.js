@@ -8,7 +8,7 @@ export const Nav = styled.nav`
   width: 100%;
   top: 0;
   z-index: 1000;
-  background: ${(props) => (props.scrolled ? `white` : null)};
+  background: ${(props) => (props.scrolled ? `white` : "#F8F8F8")};
   transition: 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
 `
 
@@ -72,6 +72,12 @@ export const Brand = styled.div`
   text-decoration: none;
   letter-spacing: 1px;
   margin: 0;
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+
   ul {
     list-style: none;
     margin: 0;
@@ -81,6 +87,11 @@ export const Brand = styled.div`
       color: ${(props) => props.theme.color.black.regular};
       text-decoration: none;
     }
+  }
+
+  svg {
+    width: 100px;
+    height: 100%;
   }
 
   span {

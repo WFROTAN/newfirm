@@ -3,6 +3,8 @@ import AnchorLink from "react-anchor-link-smooth-scroll"
 import Scrollspy from "react-scrollspy"
 import { Menu, X } from "react-feather"
 
+import LogoRocket from "../../../images/product/logo-rocket.svg"
+
 import { Container } from "../../global"
 import {
   Nav,
@@ -79,7 +81,12 @@ export default class Navigation extends Component {
           <Brand>
             <Scrollspy offset={-64} item={["top"]} currentClassName="active">
               <AnchorLink href="#top" onClick={this.closeMobileMenu}>
-                <span>AFTER</span> RED
+                <div className="logo-container">
+                  <LogoRocket />{" "}
+                  <div className="logo-text">
+                    <span>AFTER</span>&nbsp;RED
+                  </div>
+                </div>
               </AnchorLink>
             </Scrollspy>
           </Brand>

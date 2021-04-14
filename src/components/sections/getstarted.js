@@ -48,7 +48,7 @@ const GetStarted = () => (
 export default GetStarted
 
 const StyledSection = styled(Section)`
-  background-color: ${(props) => props.theme.color.background.light};
+  background-color: #f5f5f5;
   clip-path: polygon(0 0, 100% 14%, 100% 100%, 0% 100%);
 `
 
@@ -175,6 +175,7 @@ const FormContainer = styled.div`
           label {
             width: 90vw;
             margin-bottom: 30px;
+            border: 1px solid black;
           }
         }
       }

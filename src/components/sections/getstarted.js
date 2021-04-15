@@ -175,7 +175,6 @@ const FormContainer = styled.div`
           label {
             width: 90vw;
             margin-bottom: 30px;
-            border: 1px solid black;
           }
         }
       }

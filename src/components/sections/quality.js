@@ -15,7 +15,7 @@ const Quality = () => (
       </SectionTitle>
       <SectionText>
         <p>
-          We focus on the needs on each individual business and tailor content
+          We focus on the needs of each individual business and tailor content
           around what makes it unique. Our collaborative process is very hands
           on as we work closely with you to create a website that you're 100%
           happy with, and not something you simply settle for.

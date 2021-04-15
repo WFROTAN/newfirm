@@ -27,6 +27,10 @@ const Pricing = () => (
                 </li>
                 <li>
                   <CheckIcon />
+                  Mobile Friendly
+                </li>
+                <li>
+                  <CheckIcon />
                   Includes Hosting
                 </li>
                 <li>
@@ -69,6 +73,10 @@ const Pricing = () => (
                 </li>
                 <li>
                   <CheckIcon />
+                  Mobile Friendly
+                </li>
+                <li>
+                  <CheckIcon />
                   Includes Hosting
                 </li>
                 <li>
@@ -88,27 +96,26 @@ const Pricing = () => (
         </PricingItem>
         <PricingItem>
           <PricingTitle>
-            <h4>Logos & Graphic Design</h4>
+            <h4>One Time Payment</h4>
           </PricingTitle>
           <PricingText>
-            <h3>Included!</h3>
-            <h2>$0</h2>
+            <h3>Starting At</h3>
+            <h2>$1,000+</h2>
             <PricingList>
               <ul>
                 <li>
-                  <CheckIcon />2 Revisions
+                  <CheckIcon />
+                  Wordpress or Static
+                </li>
+                <li>
+                  <CheckIcon /> 3 Rounds of Revisions
                 </li>
                 <li>
                   <CheckIcon />
-                  All File Formats
+                  No Monthly Payments
                 </li>
                 <li>
-                  <CheckIcon />
-                  Ready to use
-                </li>
-                <li>
-                  <CheckIcon />
-                  FREE w/ Subscription
+                  <CheckIcon /> Contact for Details!
                 </li>
               </ul>
             </PricingList>

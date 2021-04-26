@@ -86,6 +86,11 @@ const PortfolioRow = styled.div`
   a:hover {
     background-color: #ff4432;
   }
+
+  @media screen and (max-width: 932px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `
 
 const PortfolioItem = styled.a`
@@ -98,6 +103,11 @@ const PortfolioItem = styled.a`
   padding: 0 30px;
   padding-bottom: 25px;
   text-align: center;
+
+  @media screen and (max-width: 932px) {
+    width: 70%;
+    margin-bottom: 20px;
+  }
 `
 
 const ButtonContainer = styled.div`

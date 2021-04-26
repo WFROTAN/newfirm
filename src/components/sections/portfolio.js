@@ -84,6 +84,11 @@ const PortfolioItem = styled.a`
   padding: 0 30px;
   padding-bottom: 25px;
   text-align: center;
+  background-color: black;
+
+  @media screen and (max-width: 981px) {
+    background-color: black;
+  }
 `
 
 const ButtonContainer = styled.div`

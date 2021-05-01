@@ -106,6 +106,7 @@ export default class Navigation extends Component {
     console.log(url)
 
     if (url !== "https://www.after-red.com/") {
+      console.log("test")
       return (
         <Nav {...this.props} scrolled={this.state.hasScrolled}>
           <StyledContainer>

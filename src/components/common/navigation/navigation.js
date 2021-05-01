@@ -105,7 +105,7 @@ export default class Navigation extends Component {
     const url = typeof window !== "undefined" ? window.location.href : ""
     console.log(url)
 
-    if (url === "https://www.after-red.com/portfolio/") {
+    if (url !== "https://www.after-red.com/") {
       return (
         <Nav {...this.props} scrolled={this.state.hasScrolled}>
           <StyledContainer>
@@ -190,3 +190,4 @@ export default class Navigation extends Component {
     }
   }
 }
+#${item.toLowerCase()}

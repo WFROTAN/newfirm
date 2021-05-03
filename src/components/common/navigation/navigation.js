@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { Link, navigate } from "gatsby"
+import { Link } from "gatsby"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import Scrollspy from "react-scrollspy"
 import { Menu, X } from "react-feather"
@@ -59,14 +59,10 @@ export default class Navigation extends Component {
   )
 
   getNavLink = (item) => (
-    <Link onClick={this.closeMobileMenu} onClick={this.getNavigate}>
+    <Link href={`#${item.toLowerCase()}`} onClick={this.closeMobileMenu}>
       {item}
     </Link>
   )
-
-  getNavigate() {
-    navigate("/")
-  }
 
   getNavList = ({ mobile = false }) => (
     <NavListWrapper mobile={mobile}>
@@ -108,8 +104,8 @@ export default class Navigation extends Component {
     const { mobileMenuOpen } = this.state
     const url = typeof window !== "undefined" ? window.location.href : ""
     console.log(url)
-
-    if (url != "https://www.after-red.com/") {
+    /*
+    if (url !== "https://www.after-red.com/") {
       console.log("test")
       return (
         <Nav {...this.props} scrolled={this.state.hasScrolled}>
@@ -152,46 +148,48 @@ export default class Navigation extends Component {
         </Nav>
       )
     } else {
-      return (
-        <Nav {...this.props} scrolled={this.state.hasScrolled}>
-          <StyledContainer>
-            <Brand>
-              <Scrollspy offset={-64} item={["top"]} currentClassName="active">
-                <AnchorLink href="#top" onClick={this.closeMobileMenu}>
-                  <div className="logo-container">
-                    <LogoRocket />{" "}
-                    <div className="logo-text">
-                      <span>AFTER</span>&nbsp;RED
-                    </div>
+      */
+    return (
+      <Nav {...this.props} scrolled={this.state.hasScrolled}>
+        <StyledContainer>
+          <Brand>
+            <Scrollspy offset={-64} item={["top"]} currentClassName="active">
+              <AnchorLink href="#top" onClick={this.closeMobileMenu}>
+                <div className="logo-container">
+                  <LogoRocket />{" "}
+                  <div className="logo-text">
+                    <span>AFTER</span>&nbsp;RED
                   </div>
-                </AnchorLink>
-              </Scrollspy>
-            </Brand>
-            <Mobile>
-              <button
-                onClick={this.toggleMobileMenu}
-                style={{ color: "black", background: "none" }}
-              >
-                {this.state.mobileMenuOpen ? (
-                  <X size={24} alt="close menu" />
-                ) : (
-                  <Menu size={24} alt="open menu" />
-                )}
-              </button>
-            </Mobile>
-
-            <Mobile hide>{this.getNavList({})}</Mobile>
-            <ActionsContainer>(647) 271-2701</ActionsContainer>
-          </StyledContainer>
+                </div>
+              </AnchorLink>
+            </Scrollspy>
+          </Brand>
           <Mobile>
-            {mobileMenuOpen && (
-              <MobileMenu>
-                <Container>{this.getNavList({ mobile: true })}</Container>
-              </MobileMenu>
-            )}
+            <button
+              onClick={this.toggleMobileMenu}
+              style={{ color: "black", background: "none" }}
+            >
+              {this.state.mobileMenuOpen ? (
+                <X size={24} alt="close menu" />
+              ) : (
+                <Menu size={24} alt="open menu" />
+              )}
+            </button>
           </Mobile>
-        </Nav>
-      )
-    }
+
+          <Mobile hide>{this.getNavList({})}</Mobile>
+          <ActionsContainer>(647) 271-2701</ActionsContainer>
+        </StyledContainer>
+        <Mobile>
+          {mobileMenuOpen && (
+            <MobileMenu>
+              <Container>{this.getNavList({ mobile: true })}</Container>
+            </MobileMenu>
+          )}
+        </Mobile>
+      </Nav>
+    )
   }
+  //}
 }
+//#${item.toLowerCase()}

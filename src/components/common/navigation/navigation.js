@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { Link } from "gatsby"
+import { Link, navigate } from "gatsby"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import Scrollspy from "react-scrollspy"
 import { Menu, X } from "react-feather"
@@ -59,11 +59,7 @@ export default class Navigation extends Component {
   )
 
   getNavLink = (item) => (
-    <Link
-      href={`/#${item.toLowerCase()}`}
-      onClick={this.closeMobileMenu}
-      onClick={this.getNavigate}
-    >
+    <Link onClick={this.closeMobileMenu} onClick={this.getNavigate}>
       {item}
     </Link>
   )

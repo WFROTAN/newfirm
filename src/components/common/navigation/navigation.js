@@ -59,7 +59,7 @@ export default class Navigation extends Component {
   )
 
   getNavLink = (item) => (
-    <Link href={`/#${item.toLowerCase()}`} onClick={this.closeMobileMenu}>
+    <Link href={`#${item.toLowerCase()}`} onClick={this.closeMobileMenu}>
       {item}
     </Link>
   )
@@ -105,7 +105,7 @@ export default class Navigation extends Component {
     const url = typeof window !== "undefined" ? window.location.href : ""
     console.log(url)
 
-    if (url !== "https://www.after-red.com/") {
+    if (url != "https://www.after-red.com/") {
       console.log("test")
       return (
         <Nav {...this.props} scrolled={this.state.hasScrolled}>

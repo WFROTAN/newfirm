@@ -8,7 +8,7 @@ import Header from "../components/sections/header"
 import WhatWeDo from "../components/sections/whatwedo"
 import Features from "../components/sections/features"
 import Quality from "../components/sections/quality"
-//import Portfolio from "../components/sections/portfolio"
+import Portfolio from "../components/sections/portfolio"
 import Pricing from "../components/sections/pricing"
 import Footer from "../components/sections/footer"
 import GetStarted from "../components/sections/getstarted"
@@ -21,6 +21,7 @@ const IndexPage = () => (
     <WhatWeDo />
     <Features />
     <Quality />
+    <Portfolio />
     <Pricing />
     <GetStarted />
     <Footer />

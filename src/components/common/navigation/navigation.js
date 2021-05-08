@@ -18,7 +18,7 @@ import {
   ActionsContainer,
 } from "./style"
 
-const NAV_ITEMS = ["Features", "About", "Pricing", "Contact"]
+const NAV_ITEMS = ["Features", "About", "Pricing", "Contact", "Portfolio"]
 
 export default class Navigation extends Component {
   state = {
@@ -58,12 +58,6 @@ export default class Navigation extends Component {
     </AnchorLink>
   )
 
-  getNavLink = (item) => (
-    <Link href={`#${item.toLowerCase()}`} onClick={this.closeMobileMenu}>
-      {item}
-    </Link>
-  )
-
   getNavList = ({ mobile = false }) => (
     <NavListWrapper mobile={mobile}>
       <Scrollspy
@@ -75,9 +69,6 @@ export default class Navigation extends Component {
         {NAV_ITEMS.map((navItem) => (
           <NavItem key={navItem}>{this.getNavAnchorLink(navItem)}</NavItem>
         ))}
-        <NavItem>
-          <Link href="/portfolio">Portfolio</Link>
-        </NavItem>
       </Scrollspy>
     </NavListWrapper>
   )
@@ -102,53 +93,6 @@ export default class Navigation extends Component {
 
   render() {
     const { mobileMenuOpen } = this.state
-    const url = typeof window !== "undefined" ? window.location.href : ""
-    console.log(url)
-    /*
-    if (url !== "https://www.after-red.com/") {
-      console.log("test")
-      return (
-        <Nav {...this.props} scrolled={this.state.hasScrolled}>
-          <StyledContainer>
-            <Brand>
-              <Scrollspy offset={-64} item={["top"]} currentClassName="active">
-                <Link href="/" onClick={this.closeMobileMenu}>
-                  <div className="logo-container">
-                    <LogoRocket />{" "}
-                    <div className="logo-text">
-                      <span>AFTER</span>&nbsp;RED
-                    </div>
-                  </div>
-                </Link>
-              </Scrollspy>
-            </Brand>
-            <Mobile>
-              <button
-                onClick={this.toggleMobileMenu}
-                style={{ color: "black", background: "none" }}
-              >
-                {this.state.mobileMenuOpen ? (
-                  <X size={24} alt="close menu" />
-                ) : (
-                  <Menu size={24} alt="open menu" />
-                )}
-              </button>
-            </Mobile>
-
-            <Mobile hide>{this.getNavLinkList({})}</Mobile>
-            <ActionsContainer>(647) 271-2701</ActionsContainer>
-          </StyledContainer>
-          <Mobile>
-            {mobileMenuOpen && (
-              <MobileMenu>
-                <Container>{this.getNavLinkList({ mobile: true })}</Container>
-              </MobileMenu>
-            )}
-          </Mobile>
-        </Nav>
-      )
-    } else {
-      */
     return (
       <Nav {...this.props} scrolled={this.state.hasScrolled}>
         <StyledContainer>
@@ -190,6 +134,4 @@ export default class Navigation extends Component {
       </Nav>
     )
   }
-  //}
 }
-//#${item.toLowerCase()}

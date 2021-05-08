@@ -4,16 +4,15 @@ import styled from "styled-components"
 import { Section, Container } from "../global"
 
 const Portfolio = () => (
-  <StyledSection>
-    <PortfolioText>
-      <TextContent>
-        <h2>Our Portfolio</h2>
-        <p>
-          Curious what we did with others? See some of our (not under NDA)
-          works.
-        </p>
-      </TextContent>
-    </PortfolioText>
+  <StyledSection id="portfolio">
+    <SectionTitle>
+      <span>OUR</span>&nbsp;PORTFOLIO
+    </SectionTitle>
+    <SectionText>
+      <p>
+        Curious what we did with others? See some of our (not under NDA) works.
+      </p>
+    </SectionText>
     <PortfolioContainer>
       <PortfolioItems>
         <PortfolioRow>
@@ -25,9 +24,9 @@ const Portfolio = () => (
             <h4>AutoloadIT</h4>
             <p>Blazing Fast, SEO friendly eCommerce for Anime fans.</p>
           </PortfolioItem>
-          <PortfolioItem href="https://lbifinancial.com/">
-            <h4>LBI Financial</h4>
-            <p>The fastest insurance business website in NYC.</p>
+          <PortfolioItem href="https://www.otakuchan.com">
+            <h4>Otakuchan</h4>
+            <p>Fast & SEO Friendly eCommerece for Anime Fans.</p>
           </PortfolioItem>
         </PortfolioRow>
       </PortfolioItems>
@@ -37,8 +36,34 @@ const Portfolio = () => (
 
 export default Portfolio
 
-const StyledSection = styled(Section)`
-  margin-top: 100px;
+const StyledSection = styled(Section)``
+
+const SectionTitle = styled.h3`
+  color: ${(props) => props.theme.color.primary};
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 40px;
+  text-align: center;
+
+  span {
+    color: #ff4432;
+  }
+
+  @media screen and (max-width: 435px) {
+    display: flex;
+    flex-direction: column;
+  }
+`
+
+const SectionText = styled.div`
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+
+  p {
+    width: 660px;
+    text-align: center;
+  }
 `
 
 const PortfolioText = styled.div`
@@ -70,7 +95,12 @@ const PortfolioRow = styled.div`
   }
 
   a:hover {
-    background-color: #ff4432;
+    background-color: #f5f5f5;
+  }
+
+  @media screen and (max-width: 932px) {
+    flex-direction: column;
+    align-items: center;
   }
 `
 
@@ -84,10 +114,10 @@ const PortfolioItem = styled.a`
   padding: 0 30px;
   padding-bottom: 25px;
   text-align: center;
-  background-color: black;
 
-  @media screen and (max-width: 981px) {
-    background-color: black;
+  @media screen and (max-width: 932px) {
+    width: 70%;
+    margin-bottom: 20px;
   }
 `
 

@@ -20,13 +20,13 @@ const Portfolio = () => (
             <h4>Flat World</h4>
             <p>Going JAMstack with Hassle-free WordPress and Gatsby.</p>
           </PortfolioItem>
-          <PortfolioItem href="https://autoloadit.com/">
-            <h4>AutoloadIT</h4>
-            <p>Blazing Fast, SEO friendly eCommerce for Anime fans.</p>
+          <PortfolioItem href="https://www.outside-the-lines.co.uk/">
+            <h4>Outside the Lines</h4>
+            <p>ECommerce website for a clothing brand.</p>
           </PortfolioItem>
-          <PortfolioItem href="https://www.otakuchan.com">
-            <h4>Otakuchan</h4>
-            <p>Fast & SEO Friendly eCommerece for Anime Fans.</p>
+          <PortfolioItem href="https://foxcrestmedia.com/">
+            <h4>Fox Crest Media</h4>
+            <p>Blazing Fast & SEO Friendly site for a copy write agency.</p>
           </PortfolioItem>
         </PortfolioRow>
       </PortfolioItems>
